@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Skills Client</title>
+<script type="text/javascript" src="../js/jsonPresentationUtils.js"></script>
+<script type="text/javascript" src="../js/skillsData.js"></script>
+<script type="text/javascript">
+function doOnLoad(){
+	var areaOut = document.getElementById("skillsWrapper");
+	//skm.sortByParent();
+	skm.resolveHeirarchcal();
+	var sFlat = skm.toFormat("depth:${depth} -- parent:${parentName}[${parentId}], name:${name}[${id}], children:${children}<br/>\n");
+	var sHeir = skm.toHeirarchy();
+	areaOut.innerHTML = sHeir;
+}
+</script>
+</head>
+<body onload="doOnLoad();">
+<div id="skillsWrapper"></div>
+</body>
+</html>

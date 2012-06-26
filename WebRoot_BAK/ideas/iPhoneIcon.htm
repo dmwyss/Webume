@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iIcon iPhone Icon with CSS</title>
+<script type="text/javascript">
+/*
+function createIcon(){
+	var sOut = "";
+	sOut +
+	return sOut;
+}
+function doOnLoad(){
+	var sOut = "";
+	sOut += createIcon();
+	document.getElementById("areaIcons").innerHTML = sOut;
+}
+*/
+</script>
+<style type="text/css">
+.iiconWrapper {
+	padding:0;
+	position:relative;
+	width:280px;
+	XXXborder: 1px solid green;
+}
+.iiconFrame, .iiconReflectionFrame {
+	padding:0;
+	border-radius: 8px;
+	width:50px;
+	height:50px;
+	background: -moz-linear-gradient(center top , #DE382C 0%, #7E0E15 100%) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#DE382C), to(#7E0E15));
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#DE382C', EndColorStr='#7E0E15', GradientType=0);
+}
+.iiconFrame {
+	background-color: #DE382C;
+	overflow:hidden; /* turn off and on for debugging */
+	position: relative;
+}
+.iiconGloss {
+	background-color:#FFF;
+	opacity:0.25;
+	filter:Alpha(Opacity=25);
+	border-radius: 0 0 33% 33%;
+	width:50px;
+	position: absolute;
+	top:0px;
+}
+.iiconReflectionFrame {
+	background: -moz-linear-gradient(center top , #888 0%, #FFF 100%) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#FFF));
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#888', EndColorStr='#FFF', GradientType=0);
+	opacity:0.5;
+	filter:Alpha(Opacity=50);
+	position:absolute;
+	top: 51px;
+	height:30px;
+}
+.iiconReflectionFrameSAMPLE_NAME {
+	background: -moz-linear-gradient(center top , #945 0%, #FFFFFF 100%) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#945), to(#FFF));
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#945', EndColorStr='#FFF', GradientType=0);
+}
+.iiconPictureSAMPLE_NAME {
+	width:50px;
+	height:50px;
+	color:#000;
+	text-align: center;
+	font-size: 250%;
+	line-height: 52px;
+	position: absolute;
+	top:-3px;
+}
+.iiconTitleWrapper {
+	display: table;
+	height:50px;
+	position:absolute;
+	top:0;
+	left:55px;
+}
+.iiconTitleRight {
+	font-family: Helvetica;
+	font-size: 100%;
+	vertical-align: middle;
+	display: table-cell;
+	line-height: 100%;
+}
+</style>
+</head>
+<body onload="" style="background-color: #FFF;">
+<div class="iiconWrapper">
+	<div class="iiconFrame">
+		<div class="iiconPictureSAMPLE_NAME">:)</div>
+		<div class="iiconGloss">&nbsp;</div>
+	</div>
+	<div class="iiconReflectionFrame iiconReflectionFrameSAMPLE_NAME">&nbsp;</div>
+	<div class="iiconTitleWrapper">
+		<div class="iiconTitleRight">This is the heading<br/>broken on two lines.</div>
+	</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!-- span class="ding">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklnmopqrstuvwxyz 1234567890 !@#$%^&*()_+}{":?</span -->
+</body>
+</html>
